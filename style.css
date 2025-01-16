@@ -6,6 +6,12 @@
     background-color: #D8C4B6;
 }
 
+.bigLogo {
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     height: 75px;
     float: left;
