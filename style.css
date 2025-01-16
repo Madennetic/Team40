@@ -8,3 +8,10 @@ body {
     background-color: rgb(245, 239, 231);
     color: rgb(62, 88, 121);
 }
+
+.profile {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fffaf2;
+    border-radius: 10px;
+}
