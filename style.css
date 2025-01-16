@@ -54,3 +54,9 @@ body {
     border-radius: 10px;
 
 }
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+}
