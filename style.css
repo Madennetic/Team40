@@ -22,13 +22,14 @@
 }
 
 .links {
+    margin:18px;
     padding: 3px;
-    padding-left: 10px;
     font-size: 27px;
     color: #213555;
     float: right;
     display: flex;
     margin-right: 10px;
+    margin-left: 10px;
     justify-content: space-between;
     gap: 1em;
     font-weight: bold;
