@@ -1,3 +1,40 @@
+.header {
+    background-color: #D8C4B6;
+}
+
+#logo {
+    height: 75px;
+    float: left;
+    overflow: hidden;
+}
+
+#name {
+    padding: 3px;
+    padding-left: 10px;
+    font-size: 27px;
+    color: #213555;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links {
+    padding: 3px;
+    padding-left: 10px;
+    font-size: 27px;
+    color: #213555;
+    float: right;
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    gap: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 body {
     position: fixed;
     display: flex;
@@ -7,6 +44,7 @@ body {
     font-family: monospace;
     background-color: rgb(245, 239, 231);
     color: rgb(62, 88, 121);
+
 }
 
 .profile {
@@ -14,4 +52,5 @@ body {
     margin-bottom: 20px;
     background-color: #fffaf2;
     border-radius: 10px;
+
 }
