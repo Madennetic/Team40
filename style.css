@@ -47,7 +47,6 @@
 }
 
 body {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -61,16 +60,32 @@ body {
 
 }
 
+.about {
+    text-align: center;
+    
+}
+
+.all-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
 .profile {
+    background-color: rgb(215, 222, 212);
     padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fffaf2;
     border-radius: 10px;
-
+    text-align: center;
+    width: 250px;
 }
 
-.profile-image {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 10px;
+
+
+
+.profile p {
+    color: #3e5879;
+    font-size: 1rem;
+    line-height: 1.5;
 }
+
