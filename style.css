@@ -19,6 +19,7 @@
 }
 .content {
     padding: 20px;
+    
 }
 .name {
     padding: 3px;
@@ -102,4 +103,19 @@ body {
 }
 .small-links {
     color: rgb(62, 88, 121);
+}
+
+.paragraph {
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: justify;
+}
+
+.body {
+    background-color: #ffffff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 2%;
+    border-radius: 10px;
+    font-size: 14px;
 }
