@@ -97,3 +97,9 @@ body {
     line-height: 1.5;
 }
 
+.title {
+    text-align: center;
+}
+.small-links {
+    color: rgb(62, 88, 121);
+}
