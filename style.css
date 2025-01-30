@@ -19,7 +19,6 @@
 }
 .content {
     padding: 20px;
-    
 }
 
 .name {
@@ -119,4 +118,10 @@ body {
     margin: 2%;
     border-radius: 10px;
     font-size: 14px;
+}
+.top-left {
+    text-align: right;
+}
+.body-text {
+    padding: 2% 0 0 2%;
 }
