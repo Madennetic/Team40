@@ -125,3 +125,15 @@ body {
 .body-text {
     padding: 2% 0 0 2%;
 }
+
+dl {
+    padding: 15px;
+}
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dd {
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
