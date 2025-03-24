@@ -31,20 +31,17 @@ Report for website requested by Roya Supermarket
             <p class="content"><h1 class="title"> Development Plan</h1>
                 <dl>
                     <dt>Names: Your team, the client, and the app (or suite of apps): <br>
-                    List the name of your team and all team members. List the name and/or affiliation of your
-                    client for this project and the name of the app (or suite of apps) you want to build for them.
                     </dt>
                         <dd><br> Our team, Team40, is composed of Abdelrahman Mohammed, Ameer Hamza, Eric Zhang, Maden Chopra, and Zaid Seta. Our client is Hekmat Mashkoor who owns a supermarket named Roya Supermarket in Hamilton, Ontario. Our team aims to deliver a website for Roya Supermarket consisting of a fully functional front-end, back-end, and database.
                         </dd>
 
-                    <dt>Purpose:<br>This is a brief description of what the app or suite of apps is for and how it will work. Explain why you have chosen to build this particular product and relate your reasons back to the client’s needs you identified in the initial client report from week 4.
+                    <dt>Purpose:
                     </dt>
                         <dd>The purpose of our app is to increase traffic and recognition for Roya Supermarket. As a brick-and-mortar store, there’s a community of online shoppers that the business cannot reach. We hope to bridge this gap by providing general information and the ability to order groceries through an online portal. </dd>
                         <dd>In terms of general information, we hope to include basic information about the supermarket including a landing page with an eye-catching logo with photos, contact information, and hours. In addition, we’d like to have two additional pages, one to contact the supermarket through a form and one for customers to leave reviews.</dd>
                         <dd>For ordering groceries, we’d like to have available products displayed with information such as the name and quantity. This information would be retrieved from a table. Customers would also have the ability to add items in a shopping cart and place an order as well. If we have enough time, we hope to implement a search/filter system to help customers find products they’re looking for in a more efficient manner.</dd>
                     <dt>
                         Data Description <br>
-                        List each database table you will need. For each table: explain in one sentence why you need it, describe in one sentence what information will be stored in it, and then list the field names and data types you will use, identifying the primary key for each table.
                     </dt>
                         <dd>We would like a database table for product information. This table would store information about products such as the id (primary key), name, category (meat, produce, dairy, etc.), price, and quantity and would be updated when applicable. We plan on using INT for the id and quantity, FLOAT for the price, and VARCHAR for the name and category as data types.  </dd>
                         <dd>We would like to have a table to hold customer orders. This table would contain an id, the customer name, the customer address, the date the order was placed, and a description of everything they ordered. We plan on using INT for the id, VARCHAR for the customer name, address, and the description, and DATE for the date.</dd>
@@ -52,9 +49,6 @@ Report for website requested by Roya Supermarket
                         <dd>Finally, we want to have a table that stores all the reviews about the store. We want a user to be able to add reviews on the store directly on the website that contains information like an id, the customer’s name, rating, and an optional message. We plan on using INT for the id and rating and VARCHAR for the name and optional message.</dd>
                     <dt>
                         Functions performed by the app <br>
-                        Make a list of functions the app or apps will allow the user to perform. For each function
-                        that has an effect on the database, make sure you are clear as to what exact effect it will
-                        have (i.e. is it an INSERT, UPDATE, SELECT, or DELETE or some combination of these?) For client-side functionality, make sure you are clear as to how it will be implemented.
                     </dt>
                         <dd>The landing page will be largely static. There would be little the user would be able to interact with.</dd>
                         <dd>For the contact form page, the end goal is to have a way to send a message or concern to the supermarket quickly. This page would be constructed using PHP and a form element. When the submit button is clicked, an INSERT command will be executed and add the user data to the table. We also plan to make it so an email is sent to the customer whenever they submit a form. </dd>
@@ -62,13 +56,11 @@ Report for website requested by Roya Supermarket
                         <dd>For the shopping cart, we want it to be able to update information in the database, particularly the quantity. Users will be able to add products to the cart which will then calculate the price. The user would then have to enter their credit card information in order to submit. If these conditions are met, the form will INSERT the order in the order table and UPDATE the quantity in the product table.</dd>
                         <dd>For the review page, it will be very similar to the contact form page. It will have similar logic and use INSERT but will contain different form parameters. </dd>
                     <dt>Role of PHP and Javascript<br>
-                        What will you use PHP for, and what will you use JavaScript for? Be specific and relate back to the functions performed by the app. How will PHP and JavaScript work together? Will the bulk of the code be JavaScript or will more of it be PHP?
                     </dt>
                         <dd>We definitely plan on using lots of PHP and a little bit of JavaScript to ensure our projects functionality. PHP will be used for the contact form, shopping cart, reviews, and the products page. PHP will be used to help communicate with the database, including inserting, selecting, and updating information. PHP will also receive user input and create SQL commands. 
                             We envision using JavaScript in the contact form where the user would enter their email. JavaScript would check to ensure these match and if they do, allow them to submit the form. JavaScript would also be used to add shopping cart animations on the front end.</dd>
                     <dt>
                         Roles of Team Members<br>
-                        Who is responsible for what? In a four-member team, there should be at least four distinct areas or pieces of functionality of about equal scope, with a name assigned to each. If you like pair programming, you could assign two pieces of functionality to a pair of members in a sub-team, but those team members should commit to working together as much as possible. You can work on look and feel together, or that could be part of one member’s responsibilities. Remember that everyone must write some JavaScript and/or PHP code.
                     </dt>
                         <dd>We plan on distributing our work as follows:</dd>
                         <dd>Hamza and Zaid will work together on the front end and displaying inventory data on the website. This involves making API queries to their Clover database regularly to automatically update relevant information in the database. The filter system will use tags to identify which products match what the customer is looking for. The front end will be designed using HTML and CSS. This group will have the most communication with our client to ensure that the final design is visually what they want. </dd>
@@ -76,13 +68,14 @@ Report for website requested by Roya Supermarket
                         <dd>Abdelrahman will work on a contact form where customers can submit, check if the email entered is correct and send the automatic response. JavaScript will be used to check the email and PHP will be used to store the information in a separate table for the client to access. A combination of PHP, HTML and CSS will be used to construct the page.</dd>
                         <dd>Eric will work on the review page where customers can leave reviews on the website. The reviews will then be stored in a table and displayed on the website. A combination of PHP, HTML, CSS will be used to construct the page. </dd>
                     <dt>The increments<br>
-                        You should define at least one incremental delivery (see “First Increment” below). List the functionality from each team member that will be in each increment, and your target date for each increment.
                     </dt>
-                        <dd>Our incremental delivery will consist of a website that has all of the HTML with informational pages and sitewide CSS completely finished. We want to have the database running and the tables ready to use. We hope to understand how to use Clover and access the database provided by the client. We want to have the contact and review form up on the page as well. While they may not be functional, we want them to be there. Finally, we want the shopping cart to be displayed with the products at the click of a button.</dd>
+                        <dd>Our incremental delivery will consist of a website that has all of the HTML with informational pages and sitewide CSS completely finished. We want to have the database running and the tables ready to use. </dd>
+                        <dd>For each team member, we envision:</dd>
+                        <dd>Hamza and Zaid will have the basic information as well as HTML and CSS completed for everyone to use. We hope they will be able to understand how to use Clover and access the database provided by the client. </dd>
+                        <dd>Maden will have the graphic of the shopping cart and its corresponding JavaScript working. We want the shopping cart to be displayed at the click of a button. Integration with the database will come later. </dd>
+                        <dd>Abdelrahman will have the contact form up on the page and HTML and CSS elements on display. The JavaScript will hopefully be there to check the correctness of the email. If there is time, the interaction with the database will be delivered as well. </dd>
+                        <dd>Eric will have the review form up on the page and HTML and CSS elements on display. While there might not be functionality, we hope the form will at least be there to be accessed. If there is time, the interaction with the database will be delivered as well. </dd>
                     <dt>Client Feedback<br>
-                        What feedback did your client have for you when you presented your idea to them? What
-                        changes, if any, did you make to this plan based on their feedback? Be specific and include
-                        some quotes from the client.
                     </dt>
                         <dd>We presented a rough idea of what we envisioned the website to be to the client with a handful of ideas and functionalities. Initially, we had the idea of implementing an “About the Employees” section to promote a sense of community and closeness with customers. However, when we presented the idea, our client remarked that the employees “may not want images of themselves displayed on the site”. The client also suggested focusing our shopping cart idea on meat so the customers can then pick it up later on. So, we will definitely place an emphasis on that. Other than that, the client was satisfied with the content that we presented.</dd>
                         <dd>Our client also suggested having a “section where people can leave reviews of the site and display them”. We accommodate this request by replacing what we had for the About page with this new feature. Specifically, our client wanted a site where visitors can submit reviews and complaints which will be stored in a database. </dd>
